@@ -1,0 +1,198 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    border-top: 5px dotted rgb(233, 29, 189);
+}
+.links{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.links > a{
+    border-top: 5px solid rgb(233, 29, 189);
+    border-bottom: 5px solid rgb(233, 29, 189);
+    border-radius: 2px;
+    color: rgb(0, 0, 0);   
+    background-color: rgba(255, 255, 255, 0.425);
+    text-align: center;
+    font-size: 15px;
+    padding: 11px;
+    margin: 0px 2px;
+    width: 128px;
+    height: 50px;
+    text-decoration: none;
+    }
+.links > a:hover{
+    background-color: blue;
+}
+.fotoperfil{
+    display: flex;
+    justify-content: center;
+}
+.perfil{
+    display: flex;
+    justify-content: center;
+}
+#fotoperfil{
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    display: flex;
+    border: 5px dotted rgb(233, 29, 189);
+}
+#fotoperfil:hover{
+    border: 5px dotted blue;
+}
+#nomeperfil{
+    color: rgb(233, 29, 189);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 28px;
+}
+#descricaoperfil{
+    margin-top: 5px;
+    border-top: 5px solid rgb(233, 29, 189);
+    border-bottom: 5px solid rgb(233, 29, 189);
+    border-radius: 2px;
+    color: rgb(0, 0, 0);   
+    background-color: rgba(255, 255, 255, 0.541);
+    text-align: center;
+    width: 260px;
+    height: 50px;
+}
+#front-endperfil {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+}
+
+body {
+    background-image: url('./imagens/bg.png');
+    background-size:cover;
+}
+.grupohabilidades{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.habilidades{
+    border-radius: 100%;
+    color: blue;   
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 350px;
+    height: 350px;
+}
+.habilidades h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 27px;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.habilidades p{
+    color: rgb(233, 29, 189);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    padding-top: 12px ;
+}
+#linguagens p{
+    padding-top: 35px;
+    font-size: 27px;
+}
+#cursos p{
+    font-size: 18px;
+    padding-top: 25px ;
+}
+#participacoes h1{
+    font-size: 24px;
+}
+#participacoes p{
+    font-size: 14.5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.grupoprojetos{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.projetos{
+    border-radius: 10%;
+    color: blue;   
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.projetos h1{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+.projetos > img{
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+.projetos a{
+    margin-top: 10px;
+    width: 100%;
+    border-top: 5px solid rgb(233, 29, 189);
+    border-bottom: 5px solid rgb(233, 29, 189);
+    color: rgb(0, 0, 0);   
+    background-color: rgba(255, 255, 255, 0.425);
+    text-align: center;
+    text-decoration: none;
+}
+
+.projetos > a:hover{
+    background-color: blue;
+}
+@media screen and (max-width: 1056px){
+    .habilidades h1{
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        font-weight:bold;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+    #cursos p{
+        font-size: 16px;
+    }
+    #participacoes p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 842px){
+    .grupohabilidades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 744px){
+    .grupoprojetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projetos{
+        margin-bottom: 20px;
+    }
+}
